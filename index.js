@@ -3,12 +3,12 @@ const bodyParser = require("body-parser")
 
 const app = express()
 
-app.use(bodyParser.json())
+app.use(express.json())
 
 
-app.post('/paid', (req, res) => {
+app.post('https://busy-pear-centipede-wear.cyclic.app/paid', (req, res) => {
     try {
-        console.log(res.body)
+        res.json(result)
     } catch (error) {
         console.log(error)
     }
